@@ -26,7 +26,7 @@ def get_movie_url_by_title(movie_title):
         movie_info = data['results'][0]
         movie_url = f'https://www.themoviedb.org/movie/{movie_id}'
 
-        return f"{movie_url}\nНазвание:   {movie_info['title']}\nГод:   {movie_info['release_date'][:4]}\nРейтинг:   {movie_info['vote_average']}\nОписание:   {movie_info['overview']}\nЧтобы выйти нажмите на /cancel"
+        return f"{movie_url}\nName:   {movie_info['title']}\nYear:   {movie_info['release_date'][:4]}\nRating:   {movie_info['vote_average']}\nDescription:   {movie_info['overview']}\nTo exit click on /cancel"
     else:
-        return f"Вы ввели название не правильно"
+        return f"You Entered The Name Incorrectly"
 
