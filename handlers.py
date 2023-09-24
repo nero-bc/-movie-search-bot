@@ -21,7 +21,7 @@ class Movie(StatesGroup):
 @dp.callback_query_handler(lambda c: c.data =="search")
 async def to_come(callback_query: types.CallbackQuery):
     await Movie.search.set()
-    await bot.send_message(callback_query.from_user.id, "Введите название фильма:")
+    await bot.send_message(callback_query.from_user.id, "Enter Movie Title:")
 
 
 
